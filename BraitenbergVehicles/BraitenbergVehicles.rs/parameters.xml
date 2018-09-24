@@ -6,13 +6,13 @@
 						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
 									
 		/>
-				<parameter name="vehicleCount" displayName="Vehicle Count" type="int" 
+				<parameter name="vehicleCount" displayName="Initial Agent Count" type="int" 
 						defaultValue="30" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
 									
 		/>
-				<parameter name="resourceCount" displayName="Vehicle Count" type="int" 
+				<parameter name="resourceCount" displayName="Initial Resource Count" type="int" 
 						defaultValue="50" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
@@ -50,12 +50,6 @@
 		/>
 		<parameter name="resourceMaxPoisonLevel" displayName="Max Poison Level of Resources" type="double" 
 						defaultValue="0.9" 
-						isReadOnly="false" 
-						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
-									
-		/>
-		<parameter name="epsilonPoisonLevel" displayName="Epsilon which is allowed to be over the Max Poison Level" type="double" 
-						defaultValue="0.0001" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$DoubleConverter"
 									

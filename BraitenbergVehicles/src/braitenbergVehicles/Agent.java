@@ -62,10 +62,7 @@ public class Agent {
 			return;
 		}
 		
-		Normal normal = RandomHelper.createNormal(Environment.getInstance().getKillingPoisonLevel(), Environment.getInstance().getEpsilonPoisonLevel());
-		int level = normal.nextInt();
-		
-		if (this.poisonLevel >= level && deathCounter == 0) {
+		if (this.poisonLevel >= Environment.getInstance().getKillingPoisonLevel() && deathCounter == 0) {
 			this.state = new DeathState();
 			this.speed = 0;
 			this.deathCounter++;
@@ -143,5 +140,8 @@ public class Agent {
 	public double getPoisonLevel() {
 		return this.poisonLevel;
 	}
-
+	
+	public double getMaxPoisonLevel() {
+		return this.maxPoisonLevel;
+	}
 }

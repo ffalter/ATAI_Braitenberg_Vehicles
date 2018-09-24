@@ -16,7 +16,6 @@ public class Environment {
 	private int agentRottingDuration;
 	private double resourceMaxPoisonLevel;
 	private double killingPoisonLevel;
-	private double epsilonPoisonLevel;
 	
 	private Environment() {
 		final Parameters params  = RunEnvironment.getInstance().getParameters();
@@ -27,7 +26,6 @@ public class Environment {
 		this.agentViewRange = params.getInteger("agentViewRange");
 		this.agentRottingDuration = params.getInteger("agentRottingDuration");
 		this.resourceMaxPoisonLevel = params.getDouble("resourceMaxPoisonLevel");
-		this.epsilonPoisonLevel = params.getDouble("epsilonPoisonLevel");
 		this.killingPoisonLevel = params.getDouble("killingPoisonLevel");
 	}
 	
@@ -74,8 +72,5 @@ public class Environment {
 	public double getKillingPoisonLevel() {
 		return killingPoisonLevel;
 	}
-	
-	public double getEpsilonPoisonLevel() {
-		return epsilonPoisonLevel;
-	}
+
 }
